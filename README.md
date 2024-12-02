@@ -1,5 +1,4 @@
 
-markdown
 # UniSatc-N3-MachineLearning
 
 Este é um projeto de Machine Learning desenvolvido para a disciplina N3 na UniSatc.
@@ -32,9 +31,11 @@ python app/api.py
 
 Para rodar o front end, abra o projeto no Visual Studio Code e utilize a extensão Live Server.
 
----
+## Dataset
 
-Caso tenha qualquer dúvida ou problema, sinta-se à vontade para abrir uma issue no repositório.
-```
+Este projeto utiliza o dataset de [Desempenho Estudantil](https://www.kaggle.com/datasets/devansodariya/student-performance-data/data) disponível no Kaggle.
 
-Você pode copiar e colar este conteúdo no arquivo `README.md` do seu projeto.
+## Modelos
+
+O sistema implementa regressão linear e regressão com árvore de decisão (Decision Tree Regressor) para prever a nota número 3 com base em algumas informações.
+
