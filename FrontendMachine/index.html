@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predição de Nota Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário para Predição de Última Nota Escolar</h1>
+        <form id="predictForm">
+            <label for="sex">Sexo:</label>
+            <select id="sex" name="sex" required>
+                <option value="F">Feminino</option>
+                <option value="M">Masculino</option>
+            </select>
+
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" min="15" max="22" required>
+
+            <label for="Pstatus">Status Parental:</label>
+            <select id="Pstatus" name="Pstatus" required>
+                <option value="T">Juntos (T)</option>
+                <option value="A">Separados (A)</option>
+            </select>
+
+            <label for="Medu">Educação da Mãe:</label>
+            <select id="Medu" name="Medu" required>
+                <option value="0">Nenhuma</option>
+                <option value="1">Primária (4ª série)</option>
+                <option value="2">5ª a 9ª série</option>
+                <option value="3">Ensino Secundário</option>
+                <option value="4">Ensino Superior</option>
+            </select>
+
+            <label for="Fedu">Educação do Pai:</label>
+            <select id="Fedu" name="Fedu" required>
+                <option value="0">Nenhuma</option>
+                <option value="1">Primária (4ª série)</option>
+                <option value="2">5ª a 9ª série</option>
+                <option value="3">Ensino Secundário</option>
+                <option value="4">Ensino Superior</option>
+            </select>
+
+            <label for="reason">Motivo:</label>
+            <select id="reason" name="reason" required>
+                <option value="home">Próximo de Casa</option>
+                <option value="reputation">Reputação da Escola</option>
+                <option value="course">Preferência pelo Curso</option>
+                <option value="other">Outro</option>
+            </select>
+
+            <label for="failures">Reprovações:</label>
+            <input type="number" id="failures" name="failures" min="0" max="4" required>
+
+            <label for="nursery">Em relacionamento:</label>
+            <select id="romantic" name="romantic" required>
+                <option value="yes">Sim</option>
+                <option value="no">Não</option>
+            </select>
+
+            <label for="schoolsup">Suporte Escolar:</label>
+            <select id="schoolsup" name="schoolsup" required>
+                <option value="yes">Sim</option>
+                <option value="no">Não</option>
+            </select>
+
+            <label for="activities">Atividades Extracurriculares:</label>
+            <select id="activities" name="activities" required>
+                <option value="yes">Sim</option>
+                <option value="no">Não</option>
+            </select>
+
+            <label for="nursery">Frequentou Creche:</label>
+            <select id="nursery" name="nursery" required>
+                <option value="yes">Sim</option>
+                <option value="no">Não</option>
+            </select>
+
+            <label for="higher">Deseja Ensino Superior:</label>
+            <select id="higher" name="higher" required>
+                <option value="yes">Sim</option>
+                <option value="no">Não</option>
+            </select>
+
+            <label for="internet">Acesso à Internet:</label>
+            <select id="internet" name="internet" required>
+                <option value="yes">Sim</option>
+                <option value="no">Não</option>
+            </select>
+
+            <label for="famrel">Relação Familiar:</label>
+            <select id="famrel" name="famrel" required>
+                <option value="1">1 - Muito Ruim</option>
+                <option value="2">2 - Ruim</option>
+                <option value="3">3 - Média</option>
+                <option value="4">4 - Boa</option>
+                <option value="5">5 - Excelente</option>
+            </select>
+
+            <label for="goout">Sair com Amigos:</label>
+            <select id="goout" name="goout" required>
+                <option value="1">1 - Muito Baixo</option>
+                <option value="2">2 - Baixo</option>
+                <option value="3">3 - Médio</option>
+                <option value="4">4 - Alto</option>
+                <option value="5">5 - Muito Alto</option>
+            </select>
+
+            <label for="Dalc">Consumo de Álcool no Trabalho:</label>
+            <select id="Dalc" name="Dalc" required>
+                <option value="1">1 - Muito Baixo</option>
+                <option value="2">2 - Baixo</option>
+                <option value="3">3 - Médio</option>
+                <option value="4">4 - Alto</option>
+                <option value="5">5 - Muito Alto</option>
+            </select>
+
+            <label for="Walc">Consumo de Álcool no Fim de Semana:</label>
+            <select id="Walc" name="Walc" required>
+                <option value="1">1 - Muito Baixo</option>
+                <option value="2">2 - Baixo</option>
+                <option value="3">3 - Médio</option>
+                <option value="4">4 - Alto</option>
+                <option value="5">5 - Muito Alto</option>
+            </select>
+
+            <label for="health">Saúde Atual:</label>
+            <select id="health" name="health" required>
+                <option value="1">1 - Muito Ruim</option>
+                <option value="2">2 - Ruim</option>
+                <option value="3">3 - Média</option>
+                <option value="4">4 - Boa</option>
+                <option value="5">5 - Muito Boa</option>
+            </select>
+
+            <label for="absences">Faltas:</label>
+            <input type="number" id="absences" name="absences" min="0" max="93" required>
+
+            <label for="G1">Nota G1:</label>
+            <input type="number" id="G1" name="G1" min="0" max="20" required>
+
+            <label for="G2">Nota G2:</label>
+            <input type="number" id="G2" name="G2" min="0" max="20" required>
+
+            <button type="button" id="submitBtn">Enviar</button>
+        </form>
+        <textarea id="resultBox" placeholder="O resultado aparecerá aqui..." readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
