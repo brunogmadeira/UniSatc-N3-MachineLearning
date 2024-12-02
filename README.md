@@ -1,5 +1,5 @@
 
-```markdown
+markdown
 # UniSatc-N3-MachineLearning
 
 Este é um projeto de Machine Learning desenvolvido para a disciplina N3 na UniSatc.
